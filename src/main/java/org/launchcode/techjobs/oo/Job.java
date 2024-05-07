@@ -73,32 +73,32 @@ public class Job {
         this.name = name;
     }
 
-    public Employer getEmployer() {
-        return employer;
+    public String getEmployer() {
+        return employer.getValue();
     }
 
     public void setEmployer(Employer employer) {
         this.employer = employer;
     }
 
-    public Location getLocation() {
-        return location;
+    public String getLocation() {
+        return location.getValue();
     }
 
     public void setLocation(Location location) {
         this.location = location;
     }
 
-    public PositionType getPositionType() {
-        return positionType;
+    public String getPositionType() {
+        return positionType.getValue();
     }
 
     public void setPositionType(PositionType positionType) {
         this.positionType = positionType;
     }
 
-    public CoreCompetency getCoreCompetency() {
-        return coreCompetency;
+    public String getCoreCompetency() {
+        return coreCompetency.getValue();
     }
 
     public void setCoreCompetency(CoreCompetency coreCompetency) {
