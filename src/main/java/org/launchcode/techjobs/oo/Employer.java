@@ -15,9 +15,14 @@ public class Employer {
 
     public Employer(String value) {
         this();
-        this.value = value;
+        this.value = isEmpty(value);
     }
-
+    public static String isEmpty(String txt){
+        if(txt.isEmpty()){
+            return txt = "Data Not Available";
+        }
+        return txt;
+    }
     // Custom toString, equals, and hashCode methods:
 
     @Override

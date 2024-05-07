@@ -16,7 +16,17 @@ public class Location {
     // TODO: Add a constructor that takes a string as a parameter and assigns it to the 'value' field. The
     //  constructor should also call the empty constructor in order to initialize the 'id' field.
 
+    public Location(String value) {
+        this();
+        this.value = isEmpty(value);
+    }
 
+    public static String isEmpty(String txt){
+        if(txt.isEmpty()){
+            return txt = "Data Not Available";
+        }
+        return txt;
+    }
     // Custom toString, equals, and hashCode methods:
 
     @Override
